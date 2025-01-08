@@ -23,7 +23,7 @@ const ownerNumber = ['94742398003']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+if(!config.SESSION_ID) return console.log('2ccSzTAL#LPub_Jel-czdI5LWiQnQ-F9vTTnXXqi1vxRZafexSvs')
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
@@ -136,7 +136,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             }
  
 //===================================work-type========================================= 
-if(!isOwner && config.MODE === "private") return
+if(!isOwner && config.MODE === "public") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
 //=========OWNER - REACTION ===============================  
